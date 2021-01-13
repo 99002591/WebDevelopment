@@ -1,0 +1,26 @@
+/*************** TAG Selectors ****************/
+body {
+  background-color: #eaf6f6;
+}
+hr {
+  border-color: lightgrey;
+  border-width: 4px;
+  border-style: dotted none none none;
+  height: 0px;
+  width: 20%;
+}
+h1 {
+    color: #3b9999;
+}
+h3 {
+    color: #66bfbf;
+}
+
+/************** Class Selectors **************/
+.ProfilePicture{
+    width: 100%;
+    border-radius: 30px;
+}
+.ProfilePicture:hover {
+    border-radius: 40px;
+}
