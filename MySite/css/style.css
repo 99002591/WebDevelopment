@@ -85,6 +85,7 @@ p {
     width: 700px;
 }
 .top-container-plants {
+    opacity: 50%;
     position: relative;
     bottom: 0;
     padding: 0%;
