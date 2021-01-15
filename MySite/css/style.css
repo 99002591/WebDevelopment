@@ -79,3 +79,17 @@ p {
     font-size: 1.5rem;;
     font-family: 'Dosis', sans-serif;
 }
+.description {
+    font-size: 1rem;
+}
+.grid-container {
+    grid-template-columns: auto auto auto;
+    display: grid;
+}
+.img-skill {
+    height: 200px;
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
