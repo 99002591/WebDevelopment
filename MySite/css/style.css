@@ -4,20 +4,23 @@ body {
     font-family: 'Merriweather', serif;
 }
 h1 {
-    font-size: 2cm;
+    font-size: 6rem;
     margin-top: 0%;
     padding-top: 1%;
     font-family: 'Sacramento', cursive;
+    font-weight: 1000;
     color: #66BFBF;
     margin: 0%;
 }
 h2 {
-    color: #1ec7c7;
+    color: #00c2c2;
     font-size: 2.2rem;
     font-family: 'Yusei Magic', sans-serif;
 }
 h3 {
-    font-family: 'Merriweather', serif;
+    color: #00c2c2;
+    font-size: 1.6rem;
+    font-family: 'Yusei Magic', sans-serif;
 }
 p {
     display: inline-block;
@@ -28,7 +31,7 @@ p {
 .TopContainer { 
     position: relative;
     padding-top: 5%;
-    background-color:#c5f8ef;
+    background-color:#b4f8ec;
     width: 100%;
     height: 33%;
     font-family: s;
@@ -36,16 +39,24 @@ p {
 .MiddleContainer { 
     position: relative;
     padding-top: 1%;
+    margin-bottom: 0px;
+    border-bottom-width: 20px;
+    padding-bottom: 20px;
     background-color: #82f8e2;
     width: 100%;
     height: 33%;
 }
 .BottomContainer { 
-    padding: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     background-color: #49f7d7;
     width: 100%;
     height: 33%;
     color: #3ea1a1;
+}
+.socialContainer {
+    padding: 1%;
+    background-color:#00eec2;
 }
 #title {
     font-family: 'Yusei Magic', sans-serif;
@@ -54,13 +65,53 @@ p {
 }
 #bg-top-Cloud {
     position: absolute;
-    right: 500px;
-    top: 50px;
+    opacity: 40%;
+    height: 400px;
+    width: 500px;
+    right: 100px;
+    top: 0;
 }
 #bg-bottom-Cloud {
     position: absolute;
-    left: 500px;
-    bottom: 300px;
+    opacity: 40%;
+    height: 300px;
+    width: 500px;
+    left: 400px;
+    bottom: 200px;
+}
+#bg-mountain {
+    opacity: 80%;
+    height: 400px;
+    width: 700px;
+}
+.top-container-plants {
+    position: relative;
+    bottom: 0;
+    padding: 0%;
+}
+.plants {
+    overflow: hidden;
+    margin-bottom: -30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0%;
+    height: 150px;
+    width: 100px;
+}
+.plants:hover {
+    width: 120px;
+    height: 220px;
+    transition: width 1s, height 2s;
+}
+.top-container-programmer {
+    bottom: 0;
+    padding: 0 0 60px 0;
+}
+.programmer {
+    width: 200px;
+    height: 200px;
+    right: 100px;
+    position: relative;
 }
 .passion-icon {
     height: 300px;
@@ -82,7 +133,7 @@ p {
 .description {
     font-size: 1rem;
 }
-.grid-container {
+#skills-grid {
     grid-template-columns: auto auto auto;
     display: grid;
 }
@@ -92,4 +143,12 @@ p {
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
+}
+#social-grid {
+    grid-template-columns: auto auto;
+    display: grid;
+}
+.social-img {
+    height: 800px;
+    width: 800px;
 }
