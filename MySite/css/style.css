@@ -4,13 +4,18 @@ body {
     font-family: 'Merriweather', serif;
 }
 h1 {
-    font-size: 6rem;
+    font-size: 500%;
     margin-top: 0%;
-    padding-top: 1%;
+    padding: 0%;
     font-family: 'Sacramento', cursive;
     font-weight: 1000;
     color: #66BFBF;
     margin: 0%;
+}
+#title {
+    font-family: 'Yusei Magic', sans-serif;
+    color:#00c2c2 ;
+    font-size: 150%;
 }
 h2 {
     color: #00c2c2;
@@ -33,7 +38,7 @@ p {
     padding-top: 5%;
     background-color:#b4f8ec;
     width: 100%;
-    height: 33%;
+    height: 60%;
     font-family: s;
 }
 .MiddleContainer { 
@@ -57,62 +62,6 @@ p {
 .socialContainer {
     padding: 1%;
     background-color:#00eec2;
-}
-#title {
-    font-family: 'Yusei Magic', sans-serif;
-    font-size: 1.4rem;
-    color: #66BFBF;
-}
-#bg-top-Cloud {
-    position: absolute;
-    opacity: 40%;
-    height: 400px;
-    width: 500px;
-    right: 100px;
-    top: 0;
-}
-#bg-bottom-Cloud {
-    position: absolute;
-    opacity: 40%;
-    height: 300px;
-    width: 500px;
-    left: 400px;
-    bottom: 200px;
-}
-#bg-mountain {
-    opacity: 80%;
-    height: 400px;
-    width: 700px;
-}
-.top-container-plants {
-    opacity: 50%;
-    position: relative;
-    bottom: 0;
-    padding: 0%;
-}
-.plants {
-    overflow: hidden;
-    margin-bottom: -30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0%;
-    height: 150px;
-    width: 100px;
-}
-.plants:hover {
-    width: 120px;
-    height: 220px;
-    transition: width 1s, height 2s;
-}
-.top-container-programmer {
-    bottom: 0;
-    padding: 0 0 60px 0;
-}
-.programmer {
-    width: 200px;
-    height: 200px;
-    right: 100px;
-    position: relative;
 }
 .passion-icon {
     height: 300px;
@@ -139,10 +88,11 @@ p {
     display: grid;
 }
 .img-skill {
-    height: 200px;
-    width: 200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    height: 60%;
+    width: 60%;
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+    padding-left: 0%;
     margin: 0;
 }
 #social-grid {
@@ -150,6 +100,6 @@ p {
     display: grid;
 }
 .social-img {
-    height: 800px;
-    width: 800px;
+    height: 45%;
+    width: 45%;
 }
