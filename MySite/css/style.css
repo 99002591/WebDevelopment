@@ -95,11 +95,25 @@ p {
     padding-left: 0%;
     margin: 0;
 }
-#social-grid {
-    grid-template-columns: auto auto;
-    display: grid;
-}
 .social-img {
-    height: 45%;
-    width: 45%;
+    height:30px;
+    width: 30px;
+    padding: 0 10px 0 10px;
+}
+.social-img:hover {
+    opacity: 50%;
+    animation: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.footer-contact {
+    font-family: 'Merriweather', serif;
+    font-size: medium;
+    margin-top: 0%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.footer {
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    background-color: rgb(8, 107, 74);
 }
