@@ -18,6 +18,14 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
     <title>BootStrap-site</title>
   </head>
   <body>
@@ -62,14 +70,111 @@
       </div>
     </nav>
 
-    <div class="container-fluid" id="banner-container">
-      <div class="row" id="intro-row">
-        <div class="col-lg-8">
-          <h1 id="Title">Hi there! I'm Amit<br /></h1>
-          <h4 id="tagline">full stack web developer</h4>
+    <div
+      class="container-fluid"
+      style="position: relative"
+      id="banner-container"
+    >
+      <div class="row" style="position: relative" id="intro-row">
+        <div class="col-sm-12">
+          <span id="top-banner-text">
+            <h1 id="title">Hi there! I'm Amit<br /></h1>
+            <h4 id="tagline">full stack web developer</h4>
+          </span>
+          <span id="profilePic">
+            <img id="profilePic-pic" src="resources/images/amit-dp.jpg" />
+          </span>
         </div>
-        <div class="col-lg-4">
-          <img src="resources/images/amit-dp.jpg" />
+      </div>
+      <div class="links">
+        <button type="button" class="btn btn-dark">
+          <span class="fab fa-linkedin" id="linkedinbtn"></span> LinkedIn
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="container-fluids"
+      style="position: relative"
+      id="skills-scroll"
+      data-interval="1000"
+    >
+      <h2 id="skill-header">Skills...</h2>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/css.svg"
+                alt="css"
+              />
+            </span>
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/express.svg"
+                alt="express"
+              />
+            </span>
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/html-5.svg"
+                alt="html5"
+              />
+            </span>
+          </div>
+          <div class="carousel-item">
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/java.svg"
+                alt="java"
+              />
+            </span>
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/javascript.svg"
+                alt="javascript"
+              />
+            </span>
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/nodejs.svg"
+                alt="nodejs"
+              />
+            </span>
+          </div>
+          <div class="carousel-item">
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/python.svg"
+                alt="python"
+              />
+            </span>
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/react.svg"
+                alt="react"
+              />
+            </span>
+            <span class="icons-grid">
+              <img
+                class="img-fluid skill-icon d-block w-100"
+                src="resources/images/selenium.svg"
+                alt="selenium"
+              />
+            </span>
+          </div>
         </div>
       </div>
     </div>
