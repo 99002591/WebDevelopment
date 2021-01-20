@@ -1,5 +1,6 @@
 .body{
     margin: 0 0 0 0;
+    padding: 15%;
 }
 .navbar-brand {
     color: white;
@@ -10,15 +11,11 @@
     margin-right: 0px;
     padding-left: 30px;
 }
-.col-sm-12 {
-    padding-top: 30px;
-    vertical-align: middle;
-}
 #title {
     font-size: 4rem;
 }
 #tagline {
-    font-size: 2.2rem;
+    font-size: 2.0rem;
 }
 #intro-row {
     margin: 0%;
@@ -28,42 +25,30 @@
 #banner-container {
     position: relative;
     width: 100%;
-    padding: 40px 0 40px 0;;
+    padding: 40px 15% 40px 15%;;
     margin: 0 0 0 0;
     background-color: #e47741;
+    color: #eedad0;
 }
 #top-banner-text {
-    color: #eedad0;
     display: inline-block;
-}
-#profilePic {
-    display: inline-block;
-    padding: 2.8%;
-    position: relative;
-    left: 450px;
-    top: -30px;
 }
 #profilePic-pic{
-    right: 0;
+    display: block;
+    margin: auto;
 }
-.links {
-    padding-left: 15.6%;
-}
-@media (max-width:900px) {
-    #banner-container #top-banner-text #title{
+@media (max-width:768px) {
+    #title{
         font-size: 1.8rem;
     }
-    #banner-container #top-banner-text #tagline {
+    #tagline {
         font-size: 1rem;
     }
     #profilePic-pic {
-        height: 100px;
-        width: 100px;
-        display: inline-block;
-        padding: 2.8%;
-        position: relative;
-        left: 450px;
-        top: -30px;
+        display: block;
+        margin: auto;
+        height: auto;
+        width: auto;
     }
 }
 #skills-scroll {
@@ -89,5 +74,5 @@
 }
 .active {
     margin: 0%;
-    
+    align-content: center;
 }
