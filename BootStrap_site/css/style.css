@@ -1,6 +1,6 @@
-.body{
-    margin: 0 0 0 0;
-    padding: 15%;
+*{
+    margin: 0;
+    justify-content: center;
 }
 .navbar-brand {
     color: white;
@@ -8,8 +8,7 @@
 #header-logo {
     height: 80px;
     width: 80px;
-    margin-right: 0px;
-    padding-left: 30px;
+    margin: auto;
 }
 #title {
     font-size: 4rem;
@@ -23,12 +22,11 @@
     padding: 0 15.6% 0 15.6%;
 }
 #banner-container {
+    min-height: 500px;
     background-image: url("../resources/images/BannerPersonal.png");
-    background-size: auto;
-    position: relative;
-    width: 100%;
+    background-size: cover;
     padding: 40px 15% 40px 15%;;
-    margin: 0 0 0 0;
+    margin: auto;
     background-color: #e47741;
     color: #eedad0;
 }
@@ -36,7 +34,7 @@
     display: inline-block;
 }
 #profilePic-pic{
-    display: inline-block;
+    display: block;
     float: right;
     margin: auto;
 }
