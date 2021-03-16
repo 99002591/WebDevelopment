@@ -1,4 +1,99 @@
-.wrapper {
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(231, 236, 223);
+}
+
+h1,h2,h3,h4,p {
+    margin: 0;
+}
+* {
+    float: none;
+    width: auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 7%;
+}
+.navLogo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+}
+.nav__links {
+    list-style: none;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.nav__links li a:hover {
+    color: green;
+}
+main {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3vh 10%;
+    align-items: center;
+}
+.mainBody .landingText {
+    margin-right: auto;
+    font-size: 1.5vw;
+    color: darkolivegreen;
+}
+.mainBody .landingImg {
+    width: 40vw ;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px rgba(150, 231, 156, 0.712);
+}
+.entry {
+    display: block;
+    position: absolute;
+    margin-left: 47vw;
+    padding: 3vh 10%;
+}
+.entry .a-loginbtn {
+    padding: 0 40px;
+}
+.entry .b-loginbtn {
+    min-width: 60px;
+    max-width: 200px;
+    font-size: clamp(0.5em, 1.5vw, 3em);
+    font-weight: bolder;
+    color: darkolivegreen;
+    padding: 0.7em 1.2em;
+    border-radius: 20%;
+    box-shadow: 10px 10px 5px rgba(72, 87, 73, 0.199);
+    transition-duration: 0.4s;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+}
+.entry .b-signupbtn {
+    min-width: 60px;
+    max-width: 200px;
+    font-size: clamp(0.5em, 1.5vw, 3em);
+    font-weight: bolder;
+    color: white;
+    background-color: darkolivegreen;
+    padding: 0.7em 1.2em;
+    border-radius: 20%;
+    box-shadow: 10px 10px 5px rgba(72, 87, 73, 0.199);
+    transition-duration: 0.4s;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
 }
