@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(231, 236, 223);
+    /* background-color: rgb(231, 236, 223); */
 }
 
 h1,h2,h3,h4,p {
@@ -14,64 +14,115 @@ h1,h2,h3,h4,p {
     float: none;
     width: auto;
 }
-
+.fullscreenBG{
+    z-index: -100;
+}
+.backgroundVideo {
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    z-index: -100;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
 header {
+    z-index: 1;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 7%;
+    padding: 15px 10%;
+    background-color: rgba(138, 245, 231, 0.747);
+    box-shadow: 10px 10px 5px rgba(104, 107, 112, 0.349);
 }
 .navLogo {
+    margin: 0%;
     cursor: pointer;
     margin-right: auto;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .nav__links {
+    margin: 0%;
     list-style: none;
+    font-family: 'JetBrains Mono', monospace;
 }
 .nav__links li {
+    margin: 0%;
     display: inline-block;
-    padding: 0px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0px 10px;
 }
 .nav__links li a {
     transition: all 0.3s ease 0s;
     text-decoration: none;
 }
 .nav__links li a:hover {
+    font-weight: bolder;
     color: green;
 }
 main {
+    z-index: 1;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: flex-end;
     padding: 3vh 10%;
     align-items: center;
 }
-.mainBody .landingText {
-    margin-right: auto;
-    font-size: 1.5vw;
-    color: darkolivegreen;
+.mainBody .landingPG .landingImg {
+    display: inline-block;
+    min-width: calc(10px + 1vw);
 }
 .mainBody .landingImg {
-    width: 40vw ;
+    display: inline-block;
+    opacity: 70%;
+    margin-top: 30px;
+    width: 50vw;
     border-radius: 10%;
     box-shadow: 10px 10px 5px rgba(150, 231, 156, 0.712);
 }
-.entry {
-    display: block;
-    position: absolute;
-    margin-left: 47vw;
+.mainBody .textNbtn {
+    padding-top: 30;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.mainBody .landingText {
+    padding-top: 30px;
+    margin-right: auto;
+    font-family: 'Kaushan Script', cursive;
+    font-size: calc(10px + 1vw);
+    color: rgb(153, 160, 142);
+    text-shadow: darkseagreen;
+}
+.mainBody .textNbtn .entry {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-between;
     padding: 3vh 10%;
 }
-.entry .a-loginbtn {
-    padding: 0 40px;
+.mainBody .textNbtn .entry  a{
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.entry .b-loginbtn {
-    min-width: 60px;
-    max-width: 200px;
-    font-size: clamp(0.5em, 1.5vw, 3em);
+.mainBody .textNbtn .entry a button {
+    font-size: 1.5em;
     font-weight: bolder;
+}
+.mainBody .textNbtn .entry .b-loginbtn {
     color: darkolivegreen;
+    opacity: 70%;
     padding: 0.7em 1.2em;
     border-radius: 20%;
     box-shadow: 10px 10px 5px rgba(72, 87, 73, 0.199);
@@ -81,13 +132,10 @@ main {
     -ms-border-radius: 20%;
     -o-border-radius: 20%;
 }
-.entry .b-signupbtn {
-    min-width: 60px;
-    max-width: 200px;
-    font-size: clamp(0.5em, 1.5vw, 3em);
-    font-weight: bolder;
+.mainBody .textNbtn .entry .b-signupbtn {
     color: white;
     background-color: darkolivegreen;
+    opacity: 70%;
     padding: 0.7em 1.2em;
     border-radius: 20%;
     box-shadow: 10px 10px 5px rgba(72, 87, 73, 0.199);

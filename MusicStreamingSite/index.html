@@ -6,37 +6,49 @@
         <title>musica</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet"> 
+
         <link rel="stylesheet" href="styles/homepage.css">
-        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 700px)" href="styles/small-device-homepage.css" />
+        <!-- <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 700px)" href="styles/small-device-homepage.css" /> -->
     </head>
     <body>
+        <div class="fullscreenBG">
+            <video autoplay muted loop poster="assets/images/poster.png" class="backgroundVideo">
+                <source src="assets/videos/abstract.mp4" type="video/mp4">
+            </video>
+        </div>
         <header class="navBar">
                 <img class = "navLogo" src="assets/logo/logo.png" alt="musicaLogo">
                 <nav>
                     <ul class="nav__links">
-                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">ABOUT</a></li> 
                         <li><a href="#">PLANS</a></li>
                         <li><a href="#">CONTACT</a></li>
                     </ul>
                 </nav>
         </header>
         <main class="mainBody">
+            <div class = "landingPG">
+                <img class = "landingImg" src="assets/logo/logo-textual.PNG">
+            </div>
+            <div class="textNbtn">
                 <div class="landingText">
                     <h1>
                         bringing happiness through good music...
                     </h1>
                 </div>
-                <div>
-                    <img class = "landingImg" src="assets/logo/logo-textual.PNG">
+                <div class="entry">
+                    <a class ="a-loginbtn" href="#">
+                        <button class="b-loginbtn">LOGIN</button>
+                    </a>
+                    <a class ="a-signupbtn" href="#">
+                        <button class="b-signupbtn">SIGN UP</button>
+                    </a>
                 </div>
+            </div>
         </main>
-        <div class="entry">
-                <a class ="a-loginbtn" href="#">
-                    <button class="b-loginbtn">LOGIN</button>
-                </a>
-                <a class ="a-signupbtn" href="#">
-                    <button class="b-signupbtn">SIGN UP</button>
-                </a>
-        </div>
     </body>
 </html>
