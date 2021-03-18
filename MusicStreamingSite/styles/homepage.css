@@ -51,7 +51,7 @@ header {
 .nav__links li {
     margin: 0%;
     display: inline-block;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     padding: 0px 10px;
 }
@@ -69,18 +69,18 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding: 3vh 10%;
+    padding: 3vh 0%;
     align-items: center;
 }
 .mainBody .landingPG .landingImg {
     display: inline-block;
-    min-width: calc(10px + 1vw);
 }
 .mainBody .landingImg {
     display: inline-block;
     opacity: 70%;
     margin-top: 30px;
-    width: 50vw;
+    width: 60vw;
+    min-width: 400px;
     border-radius: 10%;
     box-shadow: 10px 10px 5px rgba(150, 231, 156, 0.712);
 }
@@ -96,8 +96,10 @@ main {
 .mainBody .landingText {
     padding-top: 30px;
     margin-right: auto;
+    text-align: center;
     font-family: 'Kaushan Script', cursive;
-    font-size: calc(10px + 1vw);
+    font-size: 2vw;
+    min-width: 400px;
     color: rgb(153, 160, 142);
     text-shadow: darkseagreen;
 }
@@ -118,6 +120,7 @@ main {
 }
 .mainBody .textNbtn .entry a button {
     font-size: 1.5em;
+    font-size: 3vmin;
     font-weight: bolder;
 }
 .mainBody .textNbtn .entry .b-loginbtn {
